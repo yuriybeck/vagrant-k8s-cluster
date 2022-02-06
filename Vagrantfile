@@ -5,8 +5,8 @@ Vagrant.configure("2") do |config|
     config.ssh.insert_key = false
 
     config.vm.provider "virtualbox" do |v|
-        v.memory = 1024
-        v.cpus = 2
+        v.memory = 768
+        v.cpus = 1
     end
       
     config.vm.define "k8s-master" do |master|
